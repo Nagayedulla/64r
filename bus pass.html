@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Application Form</title>
+</head>
+<body>
+  <!-- Adding an image -->
+  <div style="text-align:center; margin-bottom: 20px;">
+    <img src="./buspass img" alt="Application Logo" width="500" height="90">
+  </div>
+
+  <form action="formsubmited.html" method="get">
+    <fieldset>
+      <legend>Application Details</legend>
+      <table cellpadding="5" cellspacing="0">
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+          <td><label for="fname">Father's Name:</label></td>
+          <td><input type="text" id="fname" name="fname"></td>
+        </tr>
+        <tr>
+          <td><label for="date">Date:</label></td>
+          <td><input type="date" id="date" name="date"></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <select id="gender" name="gender">
+              <option value="">--Select Gender--</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="adhar">Aadhar:</label></td>
+          <td><input type="text" id="adhar" name="adhar"></td>
+        </tr>
+        <tr>
+          <td><label for="whatsapp">Whatsapp Number:</label></td>
+          <td><input type="tel" id="whatsapp" name="whatsapp"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email ID:</label></td>
+          <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+          <td><label for="photo">Photo:</label></td>
+          <td><input type="file" id="photo" name="photo"></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Residential Address Details</legend>
+      <table cellpadding="5" cellspacing="0">
+        <tr>
+          <td><label for="address">Applicant's Address:</label></td>
+          <td><input type="text" id="address" name="address"></td>
+        </tr>
+        <tr>
+          <td><label for="district">District:</label></td>
+          <td>
+            <select id="district" name="district">
+              <option value="">--Select District--</option>
+              <option value="krishna">Krishna</option>
+              <option value="guntur">Guntur</option>
+              <option value="prakasam">Prakasam</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="mandal">Mandal:</label></td>
+          <td>
+            <select id="mandal" name="mandal">
+              <option value="">--Select Mandal--</option>
+              <option value="mandal1">Mandal 1</option>
+              <option value="mandal2">Mandal 2</option>
+              <option value="mandal3">Mandal 3</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="village">Village:</label></td>
+          <td><input type="text" id="village" name="village"></td>
+        </tr>
+        <tr>
+          <td><label for="pincode">Pincode:</label></td>
+          <td><input type="number" id="pincode" name="pincode"></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Pass Type Details</legend>
+      <table cellpadding="5" cellspacing="0">
+        <tr>
+          <td><label for="city">City:</label></td>
+          <td><input type="text" id="city" name="city"></td>
+        </tr>
+        <tr>
+          <td><label for="pass_type">Pass Type:</label></td>
+          <td>
+            <select id="pass_type" name="pass_type">
+              <option value="">--Select Pass Type--</option>
+              <option value="student">Student</option>
+              <option value="general">General</option>
+              <option value="monthly">Monthly</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Mode of Payment & Pass Collection</legend>
+      <table cellpadding="5" cellspacing="0">
+        <tr>
+          <td><label for="payment_mode">Payment Mode:</label></td>
+          <td>
+            <select id="payment_mode" name="payment_mode">
+              <option value="">--Select Payment Mode--</option>
+              <option value="online">Online</option>
+              <option value="cash">Cash</option>
+              <option value="upi">UPI</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="delivery_mode">Pass Delivery Mode:</label></td>
+          <td>
+            <select id="delivery_mode" name="delivery_mode">
+              <option value="">--Select Delivery Mode--</option>
+              <option value="post">By Post</option>
+              <option value="center">Collection Center</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="center">Collection Center:</label></td>
+          <td>
+            <select id="center" name="center">
+              <option value="">--Select Center--</option>
+              <option value="center1">Center 1</option>
+              <option value="center2">Center 2</option>
+              <option value="center3">Center 3</option>
+            </select>
+          </td>
+       </tr>
+       </table>
+    </fieldset>
+
+    <fieldset>
+      <center><img src="./captcher.img" width="150"></center>
+      <center><input type="text" id="captcha" name="captcha" placeholder="Enter Captcha"></center>
+      <center><button type="submit">Submit</button></center>
+    </fieldset>
+  </form>
+</body>
+</html>
