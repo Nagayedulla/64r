@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background: white;
+      padding: 25px 40px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    input, select {
+      padding: 6px;
+      margin: 4px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 95%;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    button {
+      width: 100px;
+      padding: 8px;
+      margin: 5px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    button[type="reset"] {
+      background: #6c757d;
+    }
+
+    button[type="reset"]:hover {
+      background: #5a6268;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Registration details</h1>
+    <form id="regForm">
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" placeholder="Enter first name" required></td>
+        </tr>
+        <tr>
+          <td><label for="lastname">Last Name:</label></td>
+          <td><input type="text" id="lastname" name="lastname" placeholder="Enter last name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" placeholder="Enter email id" required></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password" name="password" placeholder="Enter password" required></td>
+        </tr>
+        <tr>
+          <td><label>Gender:</label></td>
+          <td>
+            <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label><br>
+            <input type="radio" id="others" name="gender" value="others"><label for="others">Others</label><br>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Preference:</label></td>
+          <td>
+            <label><input type="checkbox" name="preference" value="acrylic"> Acrylic painting</label><br>
+            <label><input type="checkbox" name="preference" value="oil"> Oil painting</label><br>
+            <label><input type="checkbox" name="preference" value="colour"> Colour painting</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Select_occupation">Select occupation:</label></td>
+          <td>
+            <select id="Select_occupation" name="Select_occupation" required>
+              <option value="">--Select--</option>
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+              <option value="artist">Artist</option>
+              <option value="other">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="bio">Bio:</label></td>
+          <td><input type="text" id="bio" name="bio" placeholder="Share few lines about you"></td>
+        </tr>
+      </table>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // Show success message when form is submitted
+    document.getElementById("regForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevents actual form submission
+      alert("Form submitted successfully ✅");
+    });
+  </script>
+
+</body>
+</html>
