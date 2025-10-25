@@ -1,0 +1,17 @@
+.bi{
+    font-size: 30px;
+    color:blueviolet;
+}
+.container{
+    background-color:lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100px;
+    height: 1000px;
+    align-items: center;
+    height: fit-content;
+}
+.items img{
+    width: 100%;
+}
